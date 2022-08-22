@@ -1,14 +1,14 @@
 package com.blog.coffee_shop.service.impl;
 
 import com.blog.coffee_shop.model.User;
-import com.blog.coffee_shop.service.UserService;
+import com.blog.coffee_shop.service.AuthenticationService;
 import com.blog.coffee_shop.util.Constant;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public UserDetails loadUserByUsername(String username) {
